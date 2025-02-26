@@ -1,6 +1,6 @@
 // 131. Palindrome Partitioning [Medium]
 // https://leetcode.com/problems/palindrome-partitioning/
-// Language: C++ | Runtime: 64 ms | Memory: 61.7 MB
+// Language: C++ | Runtime: 62 ms | Memory: 61.7 MB
 
 class Solution {
 public:
@@ -13,24 +13,23 @@ public:
     void func(int idx,string s,vector<string>& path,vector<vector<string>>& res){
         if(idx == s.size()){
             res.push_back(path);
-            return ;
+            return;
         }
         for(int i = idx;i<s.size();i++){
-            if(ispalindrome(s,idx,i)){
-                path.push_back(s.substr(idx,i-idx+1));
-                func(i+1,s,path,res);
-               path.pop_back();
-            }
+        if(ispalindrome(s,idx,i)){
+            path.push_back(s.substr(idx,i-idx+1));
+            func(i+1,s,path,res);
+            path.pop_back();
         }
-
+        }
     }
-     bool ispalindrome(string s ,int start,int end){
-        while(start<=end){
+
+    bool ispalindrome(string s , int start,int end){
+        while(start <= end){
             if(s[start++] != s[end--]){
                 return false;
             }
         }
         return true;
     }
-
 };
