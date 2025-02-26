@@ -1,17 +1,17 @@
 // 46. Permutations [Medium]
 // https://leetcode.com/problems/permutations/
-// Language: C++ | Runtime: 0 ms | Memory: 10.5 MB
+// Language: C++ | Runtime: 0 ms | Memory: 10.4 MB
 
 class Solution {
 public:
     void perms(vector<int>& nums,int idx,vector<vector<int>>& ans){
         if(idx == nums.size()){
             ans.push_back({nums});
-            return ;
+            return;
         }
-        for(int i = idx; i<nums.size();i++){
+        for(int i = idx;i<nums.size();i++) {
             swap(nums[idx],nums[i]);
-            perms(nums,idx+1, ans);
+            perms(nums,idx+1,ans);
             swap(nums[idx],nums[i]);
         }
     }
