@@ -1,6 +1,6 @@
 // 73. Set Matrix Zeroes [Medium]
 // https://leetcode.com/problems/set-matrix-zeroes/
-// Language: C++ | Runtime: 0 ms | Memory: 18.5 MB
+// Language: C++ | Runtime: 0 ms | Memory: 18.7 MB
 
 class Solution {
 public:
