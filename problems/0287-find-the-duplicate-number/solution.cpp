@@ -1,6 +1,6 @@
 // 287. Find the Duplicate Number [Medium]
 // https://leetcode.com/problems/find-the-duplicate-number/
-// Language: C++ | Runtime: 6 ms | Memory: 65 MB
+// Language: C++ | Runtime: 2 ms | Memory: 65.1 MB
 
 class Solution {
 public:
