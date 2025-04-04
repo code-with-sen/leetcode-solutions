@@ -1,6 +1,6 @@
 // 56. Merge Intervals [Medium]
 // https://leetcode.com/problems/merge-intervals/
-// Language: C++ | Runtime: 4 ms | Memory: 23.8 MB
+// Language: C++ | Runtime: 0 ms | Memory: 23.7 MB
 
 class Solution {
 public:
