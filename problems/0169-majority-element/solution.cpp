@@ -1,24 +1,20 @@
 // 169. Majority Element [Easy]
 // https://leetcode.com/problems/majority-element/
-// Language: C++ | Runtime: 2422 ms | Memory: 28.3 MB
+// Language: C++ | Runtime: 0 ms | Memory: 28.1 MB
 
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int n = nums.size();
+        int count = 0;
+        int candidate = 0;
 
-        for(int val : nums){
-            int  freq = 0;
-
-            for(int el : nums){
-                if(el == val){
-                        freq ++;
-                }
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
             }
-            if(freq > n/2){
-                return val;
-            }
+            count += (num == candidate) ? 1 : -1;
         }
-        return -1;
+
+        return candidate;
     }
 };
