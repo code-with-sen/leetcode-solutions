@@ -1,6 +1,6 @@
 // 15. 3Sum [Medium]
 // https://leetcode.com/problems/3sum/
-// Language: C++ | Runtime: 43 ms | Memory: 29.2 MB
+// Language: C++ | Runtime: 43 ms | Memory: 29.1 MB
 
 class Solution {
 public:
