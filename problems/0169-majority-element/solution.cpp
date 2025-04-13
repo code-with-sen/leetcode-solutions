@@ -1,6 +1,6 @@
 // 169. Majority Element [Easy]
 // https://leetcode.com/problems/majority-element/
-// Language: C++ | Runtime: 2379 ms | Memory: 28.2 MB
+// Language: C++ | Runtime: 2388 ms | Memory: 28 MB
 
 class Solution {
 public:
