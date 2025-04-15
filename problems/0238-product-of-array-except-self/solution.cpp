@@ -1,6 +1,6 @@
 // 238. Product of Array Except Self [Medium]
 // https://leetcode.com/problems/product-of-array-except-self/
-// Language: C++ | Runtime: 3 ms | Memory: 40.1 MB
+// Language: C++ | Runtime: 1 ms | Memory: 40.3 MB
 
 class Solution {
 public:
