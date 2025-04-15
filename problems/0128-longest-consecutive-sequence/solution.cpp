@@ -1,6 +1,6 @@
 // 128. Longest Consecutive Sequence [Medium]
 // https://leetcode.com/problems/longest-consecutive-sequence/
-// Language: C++ | Runtime: 87 ms | Memory: 88.8 MB
+// Language: C++ | Runtime: 83 ms | Memory: 88.9 MB
 
 class Solution {
 public:
