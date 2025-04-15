@@ -1,6 +1,6 @@
 // 121. Best Time to Buy and Sell Stock [Easy]
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-// Language: C++ | Runtime: 0 ms | Memory: 97.5 MB
+// Language: C++ | Runtime: 0 ms | Memory: 97.3 MB
 
 class Solution {
 public:
