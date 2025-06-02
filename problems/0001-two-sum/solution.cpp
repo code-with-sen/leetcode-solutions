@@ -1,12 +1,11 @@
 // 1. Two Sum [Easy]
 // https://leetcode.com/problems/two-sum/
-// Language: C++ | Runtime: 4 ms | Memory: 15 MB
+// Language: C++ | Runtime: 4 ms | Memory: 14.8 MB
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        
-          unordered_map<int,int> hash;
+        unordered_map<int,int> hash;
         int n = nums.size();
         for (int i= 0 ; i<n;i++){
             int com = target - nums[i];
