@@ -1,6 +1,6 @@
 // 1. Two Sum [Easy]
 // https://leetcode.com/problems/two-sum/
-// Language: C++ | Runtime: 3 ms | Memory: 14.8 MB
+// Language: C++ | Runtime: 4 ms | Memory: 15 MB
 
 class Solution {
 public:
