@@ -1,50 +1,49 @@
 // 148. Sort List [Medium]
 // https://leetcode.com/problems/sort-list/
-// Language: C++ | Runtime: 9 ms | Memory: 57 MB
+// Language: C++ | Runtime: 12 ms | Memory: 57.1 MB
 
 
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
-        if(!head || !head->next) return head;
+        
+        if(!head || !head->next) return head ;
 
-        ListNode* slow = head;
-        ListNode* fast = head->next;
+        ListNode* slow = head ;
+         ListNode* fast = head->next;
 
-        while(fast && fast->next){
+         while(fast && fast->next){
             slow = slow->next;
             fast = fast->next->next;
-        }
-        ListNode* mid = slow->next;
-        slow->next = nullptr;
+         }
 
-        ListNode* left = sortList(head);
-        ListNode* right = sortList(mid);
+             ListNode* mid = slow->next;
+             slow->next = nullptr;
 
-       return merge(left, right);
+            ListNode* left = sortList(head);
+            ListNode* right = sortList(mid);
 
-    }
+               return merge(left,right);
+         }
+          ListNode* merge(ListNode* l1, ListNode* l2){
+             ListNode dummy(0);
+              ListNode* tail = &dummy;
 
-        ListNode* merge(ListNode* l1, ListNode* l2){
-            ListNode dummy(0);
-            ListNode* tail = &dummy;
 
-            while(l1 && l2){
+              while(l1 && l2){
                 if(l1->val < l2->val){
                     tail->next = l1;
-                    l1 = l1->next;
+                    l1= l1->next;
                 }else{
-                    tail->next = l2;
+                     tail->next = l2;
                     l2 = l2->next;
-
                 }
 
                 tail = tail->next;
-            }
-            tail->next = l1 ? l1: l2;
+              }
 
-            return dummy.next;
-        
-        
+              tail->next = l1? l1:l2;
+              return dummy.next;
+          
     }
 };
