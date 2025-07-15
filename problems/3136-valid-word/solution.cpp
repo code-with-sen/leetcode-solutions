@@ -1,6 +1,6 @@
 // 3136. Valid Word [Easy]
 // https://leetcode.com/problems/valid-word/
-// Language: C++ | Runtime: 0 ms | Memory: 8 MB
+// Language: C++ | Runtime: 2 ms | Memory: 7.9 MB
 
 class Solution {
 public:
