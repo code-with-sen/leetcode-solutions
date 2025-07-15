@@ -1,37 +1,35 @@
 // 33. Search in Rotated Sorted Array [Medium]
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
-// Language: C++ | Runtime: 0 ms | Memory: 15.2 MB
+// Language: C++ | Runtime: 0 ms | Memory: 15.1 MB
 
 class Solution {
 public:
-    int search(vector<int>& nums, int target) {
-        int left = 0;
-        int right = nums.size() - 1;
+    int search(vector<int>& nums, int tar) {
+        int left = 0 ;
+        int right = nums.size() -1 ;
+        while(left <= right){
+            int mid = (left + right)/2;
 
-        while (left <= right) {
-            int mid = (left + right) / 2;
+            if(nums[mid] == tar) return mid;
 
-            // ✅ Found target
-            if (nums[mid] == target) return mid;
-
-            // \U0001f9ed Left side is sorted
-            if (nums[left] <= nums[mid]) {
-                if (nums[left] <= target && target < nums[mid]) {
-                    right = mid - 1;  // target lies in left half
-                } else {
-                    left = mid + 1;   // target in right half
+            if(nums[left] <= nums[mid]){
+                if(nums[left] <= tar && tar < nums[mid]){
+                    right = mid -1;
+                }else{
+                    left = mid + 1;
                 }
-            }
-            // \U0001f504 Right side is sorted
-            else {
-                if (nums[mid] < target && target <= nums[right]) {
-                    left = mid + 1;   // target in right half
-                } else {
-                    right = mid - 1;  // target in left half
-                }
-            }
+            } else{
+
+            if(nums[mid] < tar && tar <= nums[right]){
+            left  = mid +  1;
+        }else {
+            right  = mid - 1 ;
         }
+        }
+        }
+        return -1;
 
-        return -1; // ❌ Not found
+            
+       
     }
 };
