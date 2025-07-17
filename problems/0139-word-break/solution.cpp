@@ -1,6 +1,6 @@
 // 139. Word Break [Medium]
 // https://leetcode.com/problems/word-break/
-// Language: C++ | Runtime: 13 ms | Memory: 16 MB
+// Language: C++ | Runtime: 11 ms | Memory: 16.2 MB
 
 class Solution {
 public:
