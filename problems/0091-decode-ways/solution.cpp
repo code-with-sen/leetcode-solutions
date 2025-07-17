@@ -1,31 +1,33 @@
 // 91. Decode Ways [Medium]
 // https://leetcode.com/problems/decode-ways/
-// Language: C++ | Runtime: 0 ms | Memory: 9 MB
+// Language: C++ | Runtime: 0 ms | Memory: 8.8 MB
 
 class Solution {
 public:
     int numDecodings(string s) {
-        int n = s.size();
-        if(n == 0 || s[0] == '0') return 0;
+        if (s.empty() || s[0] == '0') return 0;
 
-   vector<int> dp(n+1,0);
-    dp[0] = 1;
-    dp[1] = 1;
+        int prev1 = 1;  // dp[i-1]
+        int prev2 = 1;  // dp[i-2]
 
-    for(int i = 2 ; i<=n ; i++){
-        if(s[i-1] !=  '0'){
-            dp[i] += dp[i-1];
+        for (int i = 1; i < s.size(); i++) {
+            int curr = 0;
+
+            // 1. Single digit decode (if not '0')
+            if (s[i] != '0') {
+                curr += prev1;
+            }
+
+            // 2. Two digit decode (if 10 to 26)
+            int twoDigit = stoi(s.substr(i - 1, 2));
+            if (twoDigit >= 10 && twoDigit <= 26) {
+                curr += prev2;
+            }
+
+            prev2 = prev1;
+            prev1 = curr;
         }
 
-
-        int twodigit = stoi(s.substr(i-2,2));
-        if(twodigit >= 10 && twodigit <= 26){
-            dp[i] += dp[i-2];
-        }
-    
-}
-
-
-         return dp[n];
+        return prev1;
     }
 };
