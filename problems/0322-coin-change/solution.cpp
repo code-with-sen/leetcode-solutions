@@ -1,6 +1,6 @@
 // 322. Coin Change [Medium]
 // https://leetcode.com/problems/coin-change/
-// Language: C++ | Runtime: 15 ms | Memory: 17.8 MB
+// Language: C++ | Runtime: 19 ms | Memory: 18 MB
 
 class Solution {
 public:
@@ -8,7 +8,7 @@ public:
         vector<int> dp(amount + 1, amount + 1 );
         dp[0] = 0;
 
-        for(int i = 1; i <= amount; i++){
+        for(int i = 1; i <= amount; ++i){
             for(int coin : coins ){
                 if(i - coin >= 0){
                     dp[i] = min(dp[i], dp[i-coin] + 1);
