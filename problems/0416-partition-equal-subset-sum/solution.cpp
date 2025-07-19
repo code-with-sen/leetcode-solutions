@@ -1,6 +1,6 @@
 // 416. Partition Equal Subset Sum [Medium]
 // https://leetcode.com/problems/partition-equal-subset-sum/
-// Language: C++ | Runtime: 83 ms | Memory: 13.4 MB
+// Language: C++ | Runtime: 87 ms | Memory: 13.2 MB
 
 class Solution {
 public:
@@ -20,6 +20,7 @@ public:
         for ( int j = target ; j >= num ; j--){
             dp[j] = dp[j] || dp[j - num];
         }
+        
         }
         return dp[target];
     }
