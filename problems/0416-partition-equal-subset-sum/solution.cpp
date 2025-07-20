@@ -1,27 +1,26 @@
 // 416. Partition Equal Subset Sum [Medium]
 // https://leetcode.com/problems/partition-equal-subset-sum/
-// Language: C++ | Runtime: 83 ms | Memory: 13.5 MB
+// Language: C++ | Runtime: 88 ms | Memory: 13.2 MB
 
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        int totalsum = accumulate(nums.begin(),nums.end(),0);
 
-        // If sum is odd, we can't divide into two equal subsets
-        if (totalSum % 2 != 0) return false;
-
-        int target = totalSum / 2;
+        if(totalsum % 2 != 0 ) return false;
+        int target = totalsum / 2;
         int n = nums.size();
 
         vector<bool> dp(target + 1, false);
-        dp[0] = true; // sum 0 is always possible with empty subset
+        dp[0] = true;
 
-        for (int num : nums) {
-            for (int j = target; j >= num; j--) {
+        
+         for(int num : nums){
+            for(int j = target ; j >= num; j--){
+           
                 dp[j] = dp[j] || dp[j - num];
             }
         }
-
-        return dp[target];
+        return dp[ target];
     }
 };
