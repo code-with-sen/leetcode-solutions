@@ -1,6 +1,6 @@
 // 1856. Maximum Subarray Min-Product [Medium]
 // https://leetcode.com/problems/maximum-subarray-min-product/
-// Language: C++ | Runtime: 55 ms | Memory: 94.4 MB
+// Language: C++ | Runtime: 43 ms | Memory: 94.6 MB
 
 class Solution {
 public:
