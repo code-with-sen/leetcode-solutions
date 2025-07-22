@@ -1,6 +1,6 @@
 // 2149. Rearrange Array Elements by Sign [Medium]
 // https://leetcode.com/problems/rearrange-array-elements-by-sign/
-// Language: C++ | Runtime: 1 ms | Memory: 128.3 MB
+// Language: C++ | Runtime: 4 ms | Memory: 128.4 MB
 
 class Solution {
 public:
@@ -10,7 +10,7 @@ public:
         vector<int> ans(n);
 
         for(int num : nums){
-            if(num >= 0){
+            if(num > 0){
                 ans[pos] = num;
                 pos +=2;
             }else{
