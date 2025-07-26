@@ -1,6 +1,6 @@
 // 142. Linked List Cycle II [Medium]
 // https://leetcode.com/problems/linked-list-cycle-ii/
-// Language: C++ | Runtime: 7 ms | Memory: 11.4 MB
+// Language: C++ | Runtime: 3 ms | Memory: 11.4 MB
 
 class Solution {
 public:
