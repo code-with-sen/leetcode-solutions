@@ -1,6 +1,6 @@
 // 92. Reverse Linked List II [Medium]
 // https://leetcode.com/problems/reverse-linked-list-ii/
-// Language: C++ | Runtime: 0 ms | Memory: 11.3 MB
+// Language: C++ | Runtime: 0 ms | Memory: 11.1 MB
 
 /**
  * Definition for singly-linked list.
@@ -15,26 +15,26 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
-        if(!head || left == right) return head ;
+        if(!head || left == right) return head;
 
         ListNode* dummy = new ListNode(0);
-        dummy-> next = head;
+        dummy->next = head;
 
         ListNode* prev = dummy;
-        for(int i = 1 ; i< left ;i++){
+
+        for(int i = 1 ; i < left ; i++){
             prev = prev->next;
         }
 
         ListNode* curr = prev->next;
         ListNode* next = NULL;
 
-        for(int i = 0 ; i< right - left ; i++){
-            next = curr->next;
+        for(int i = 0 ; i < right - left ; i++){
+            next = curr->next ;
             curr->next = next->next;
             next->next = prev->next;
             prev->next = next;
-        } 
-
-        return dummy->next;       
+        }
+        return dummy->next;
     }
 };
