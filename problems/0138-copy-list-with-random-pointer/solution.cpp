@@ -1,6 +1,6 @@
 // 138. Copy List with Random Pointer [Medium]
 // https://leetcode.com/problems/copy-list-with-random-pointer/
-// Language: C++ | Runtime: 7 ms | Memory: 15.2 MB
+// Language: C++ | Runtime: 5 ms | Memory: 15.3 MB
 
 /*
 // Definition for a Node.
@@ -21,13 +21,11 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
-        if(head == NULL){
-            return NULL;
-        } 
+        if(head == NULL) return NULL;
 
         unordered_map<Node*,Node*> m ;
 
-        Node* newhead = new Node(head->val);;
+        Node* newhead = new Node(head->val);
         Node* oldtemp = head->next;
         Node* newtemp = newhead;
         m[head] = newhead;
@@ -37,17 +35,17 @@ public:
             m[oldtemp] = copyNode;
             newtemp->next = copyNode;
             oldtemp = oldtemp->next;
-            newtemp = newtemp->next ;
-        } 
+            newtemp = newtemp->next;
+        }
 
         oldtemp = head ; newtemp = newhead;
+
         while(oldtemp!= NULL){
             newtemp->random = m[oldtemp->random];
             oldtemp = oldtemp->next;
             newtemp = newtemp->next;
         }
 
-        return newhead;
-
-        }
+        return newhead ;
+    }
 };
