@@ -1,11 +1,11 @@
 // 146. LRU Cache [Medium]
 // https://leetcode.com/problems/lru-cache/
-// Language: C++ | Runtime: 86 ms | Memory: 173.1 MB
+// Language: C++ | Runtime: 66 ms | Memory: 173.1 MB
 
 class LRUCache {
-    int capacity;
+    int capacity ;
     list<pair<int,int>> lru;
-    unordered_map<int,list<pair<int,int>>:: iterator> cache;
+    unordered_map<int,list<pair<int,int>>::iterator> cache;
 public:
     LRUCache(int cap) {
         capacity = cap;
@@ -15,12 +15,12 @@ public:
         if(cache.find(key) == cache.end())
             return -1;
 
-        lru.splice(lru.begin(),lru,cache[key]);
-        return cache[key]->second;    
+         lru.splice(lru.begin(),lru,cache[key]);
+         return cache[key]->second;   
     }
     
     void put(int key, int value) {
-        if(cache.find(key) != cache.end()){
+        if(cache.find(key)!= cache.end()){
             cache[key]->second = value;
             lru.splice(lru.begin(),lru,cache[key]);
         }else{
@@ -35,3 +35,10 @@ public:
         }
     }
 };
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
