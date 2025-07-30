@@ -1,28 +1,37 @@
 // 21. Merge Two Sorted Lists [Easy]
 // https://leetcode.com/problems/merge-two-sorted-lists/
-// Language: C++ | Runtime: 0 ms | Memory: 19.6 MB
+// Language: C++ | Runtime: 0 ms | Memory: 19.5 MB
 
-
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-         ListNode dummy(0);
-          ListNode* tail = &dummy;
+        ListNode* dummy = new ListNode(0);
+        ListNode* curr = dummy ;
 
-          while(list1 && list2){
+        while(list1 && list2){
             if(list1->val < list2->val){
-                tail->next = list1;
+                curr->next = list1;
                 list1 = list1->next;
             }else{
-                
-                tail->next = list2;
+                curr->next = list2;
                 list2 = list2->next;
             }
 
-            tail = tail->next;
-            
-          }
-        tail->next = list1 ? list1 : list2;
-          return dummy.next;
+            curr = curr->next;
+
+        }
+
+        curr->next = list1 ? list1 : list2;
+        return dummy->next;
     }
 };
