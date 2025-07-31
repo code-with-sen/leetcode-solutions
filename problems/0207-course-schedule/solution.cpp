@@ -1,35 +1,47 @@
 // 207. Course Schedule [Medium]
 // https://leetcode.com/problems/course-schedule/
-// Language: C++ | Runtime: 4 ms | Memory: 19.3 MB
+// Language: C++ | Runtime: 12 ms | Memory: 19.3 MB
 
 class Solution {
 public:
-    bool canFinish(int numcourse, vector<vector<int>>& prerequisites) {
-        vector<vector<int>> adj(numcourse);
-        vector<int> indegree(numcourse,0);
+    bool dfs(int node, vector<vector<int>>& adj , vector<int>& visited ,
+    vector<int>& pathvisited){
 
-        for(auto& pre : prerequisites){
-            adj[pre[1]].push_back(pre[0]);
-            indegree[pre[0]]++;
-        }
-        queue<int>q;
-        for(int i = 0 ; i < numcourse ; i++){
-            if(indegree[i] == 0 ) q.push(i);
-        }
-
-        int count = 0 ;
-        while(!q.empty()){
-            int node = q.front();q.pop();
-            count++;
-
+        visited[node] = 1 ;
+        pathvisited[node] = 1;
 
         for(int neighbor : adj[node]){
-            indegree[neighbor]--;
-            if(indegree[neighbor] == 0 ) q.push(neighbor);
-        }
+            if(!visited[neighbor]){
+                if(dfs(neighbor , adj , visited , pathvisited))
+                    return true;
+                
+            }else if(pathvisited[neighbor]){
+                
+                    return true;
+            }
 
         }
+                
+            pathvisited[node] = 0 ;
+            return false;
 
-        return count == numcourse;
+    }
+
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<vector<int>> adj(numCourses);
+        for(auto& pre : prerequisites){
+            adj[pre[1]].push_back(pre[0]);
+        }
+
+        vector<int> visited(numCourses,0);
+        vector<int> pathvisited(numCourses,0);
+        for(int i = 0 ; i < numCourses ; i++){
+            if(!visited[i]){
+                if(dfs(i , adj , visited , pathvisited))
+                    return false;
+            }
+        }
+
+        return true;
     }
 };
