@@ -1,6 +1,6 @@
 // 1323. Maximum 69 Number [Easy]
 // https://leetcode.com/problems/maximum-69-number/
-// Language: C++ | Runtime: 0 ms | Memory: 8.1 MB
+// Language: C++ | Runtime: 0 ms | Memory: 8 MB
 
 class Solution {
 public:
