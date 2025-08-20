@@ -1,32 +1,29 @@
 // 31. Next Permutation [Medium]
 // https://leetcode.com/problems/next-permutation/
-// Language: C++ | Runtime: 0 ms | Memory: 15.6 MB
+// Language: C++ | Runtime: 0 ms | Memory: 15.7 MB
 
 class Solution {
 public:
-    void nextPermutation(vector<int>& a) {
-    int ind = -1;
-    int n = a.size();
-    for(int i = n-2 ; i>=0; i--){
-        if(a[i]<a[i+1]){
-           ind = i;
-            break;
+    void nextPermutation(vector<int>& nums) {
+        int n = nums.size();
+        int idx = -1;
+        for(int i = n - 2; i >= 0 ;i--){
+            if(nums[i] < nums[i + 1]){
+                idx = i;
+                break;
+            }
         }
-    }        
-
-    if(ind == -1){
-       reverse(a.begin(),a.end());
-       return;
-    }
-
-    for(int i = n-1 ; i>ind ; i--){
-        if(a[i]>a[ind]){
-            swap(a[i],a[ind]);
-            break;
+        if(idx == -1){
+            reverse(nums.begin(),nums.end());
+            return;
         }
-    }
 
-    reverse(a.begin()+ind+1,a.end());
-    return;
+        for(int i = n -1 ; i > idx ; i--){
+            if(nums[i] > nums[idx]){
+                swap(nums[i],nums[idx]);
+                break;
+            }
+        }
+        reverse(nums.begin() + idx + 1,nums.end());
     }
 };
