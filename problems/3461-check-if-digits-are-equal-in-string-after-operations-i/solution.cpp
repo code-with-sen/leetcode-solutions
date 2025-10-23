@@ -1,6 +1,6 @@
 // 3461. Check If Digits Are Equal in String After Operations I [Easy]
 // https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/
-// Language: C++ | Runtime: 0 ms | Memory: 11.7 MB
+// Language: C++ | Runtime: 0 ms | Memory: 11.6 MB
 
 class Solution {
 public:
