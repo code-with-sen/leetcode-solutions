@@ -1,6 +1,6 @@
 // 2048. Next Greater Numerically Balanced Number [Medium]
 // https://leetcode.com/problems/next-greater-numerically-balanced-number/
-// Language: C++ | Runtime: 544 ms | Memory: 254.7 MB
+// Language: C++ | Runtime: 523 ms | Memory: 254.8 MB
 
 class Solution {
 public:
