@@ -1,6 +1,6 @@
 // 1716. Calculate Money in Leetcode Bank [Easy]
 // https://leetcode.com/problems/calculate-money-in-leetcode-bank/
-// Language: C++ | Runtime: 0 ms | Memory: 7.9 MB
+// Language: C++ | Runtime: 0 ms | Memory: 7.8 MB
 
 class Solution{
 public:
