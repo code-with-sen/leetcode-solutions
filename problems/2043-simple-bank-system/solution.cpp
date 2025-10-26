@@ -1,6 +1,6 @@
 // 2043. Simple Bank System [Medium]
 // https://leetcode.com/problems/simple-bank-system/
-// Language: C++ | Runtime: 7 ms | Memory: 123.7 MB
+// Language: C++ | Runtime: 8 ms | Memory: 123.7 MB
 
 class Bank {
 public:
