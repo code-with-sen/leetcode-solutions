@@ -1,6 +1,6 @@
 // 2125. Number of Laser Beams in a Bank [Medium]
 // https://leetcode.com/problems/number-of-laser-beams-in-a-bank/
-// Language: C++ | Runtime: 3 ms | Memory: 27.2 MB
+// Language: C++ | Runtime: 5 ms | Memory: 27.4 MB
 
 class Solution {
 public:
