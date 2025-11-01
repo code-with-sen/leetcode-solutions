@@ -5,14 +5,11 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        int n = nums.size();
-        int count = nums[0];
-        int maxcount = nums[0];
-        for(int i = 1 ; i < n ; i++){
-            count = max(nums[i],nums[i] +count);
-            maxcount = max(maxcount,count);
+        int count = nums[0], maxcount = nums[0];
+        for(int i = 1 ; i < nums.size() ; i++){
+            count = max(nums[i], nums[i] + count);
+            maxcount = max(maxcount , count);
         }
-
         return maxcount;
     }
 };
