@@ -1,6 +1,6 @@
 // 1578. Minimum Time to Make Rope Colorful [Medium]
 // https://leetcode.com/problems/minimum-time-to-make-rope-colorful/
-// Language: C++ | Runtime: 0 ms | Memory: 100 MB
+// Language: C++ | Runtime: 3 ms | Memory: 100 MB
 
 class Solution {
 public:
