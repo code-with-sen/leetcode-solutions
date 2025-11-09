@@ -1,6 +1,6 @@
 // 2169. Count Operations to Obtain Zero [Easy]
 // https://leetcode.com/problems/count-operations-to-obtain-zero/
-// Language: C++ | Runtime: 0 ms | Memory: 7.8 MB
+// Language: C++ | Runtime: 0 ms | Memory: 8 MB
 
 class Solution {
 public:
