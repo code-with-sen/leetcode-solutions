@@ -1,18 +1,20 @@
 // 1. Two Sum [Easy]
 // https://leetcode.com/problems/two-sum/
-// Language: C++ | Runtime: 0 ms | Memory: 14.8 MB
+// Language: C++ | Runtime: 2 ms | Memory: 14.7 MB
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int,int> mp;
-        for(int i = 0 ; i < nums.size(); i++){
-            int need = target - nums[i];
-            if(mp.find(need) != mp.end()){
-                return  {mp[need],i};
+        unordered_map<int, int> seen;
+
+        for (int i = 0; i < nums.size(); i++) {
+            int needed = target - nums[i];
+
+            if (seen.find(needed) != seen.end()) {
+                return {seen[needed], i};
             }
 
-            mp[nums[i]] = i;
+            seen[nums[i]] = i;
         }
 
         return {};
