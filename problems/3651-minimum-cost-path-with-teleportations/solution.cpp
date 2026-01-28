@@ -1,6 +1,6 @@
 // 3651. Minimum Cost Path with Teleportations [Hard]
 // https://leetcode.com/problems/minimum-cost-path-with-teleportations/
-// Language: C++ | Runtime: 823 ms | Memory: 306.7 MB
+// Language: C++ | Runtime: 836 ms | Memory: 306.6 MB
 
 class Solution {
 public:
