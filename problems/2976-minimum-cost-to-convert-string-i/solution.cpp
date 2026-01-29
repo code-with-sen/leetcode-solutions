@@ -1,6 +1,6 @@
 // 2976. Minimum Cost to Convert String I [Medium]
 // https://leetcode.com/problems/minimum-cost-to-convert-string-i/
-// Language: C++ | Runtime: 20 ms | Memory: 100.3 MB
+// Language: C++ | Runtime: 16 ms | Memory: 100.3 MB
 
 class Solution {
  public:
