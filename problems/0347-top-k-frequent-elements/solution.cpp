@@ -1,0 +1,33 @@
+// 347. Top K Frequent Elements [Medium]
+// https://leetcode.com/problems/top-k-frequent-elements/
+// Language: C++ | Runtime: 0 ms | Memory: 17.9 MB
+
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        unordered_map<int,int> freq;
+
+        for(int num : nums){
+            freq[num]++;
+        }
+
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+
+        for(auto &it : freq){
+            pq.push({it.second, it.first});
+
+            if(pq.size() > k){
+                pq.pop();
+            }
+        }
+   
+       vector<int> ans;
+       while(!pq.empty()){
+        ans.push_back(pq.top().second);
+        pq.pop();
+       }
+
+     return ans;
+
+    }
+};
