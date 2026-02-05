@@ -1,6 +1,6 @@
 // 3379. Transformed Array [Easy]
 // https://leetcode.com/problems/transformed-array/
-// Language: C++ | Runtime: 12 ms | Memory: 25.8 MB
+// Language: C++ | Runtime: 4 ms | Memory: 25.9 MB
 
 class Solution {
 public:
