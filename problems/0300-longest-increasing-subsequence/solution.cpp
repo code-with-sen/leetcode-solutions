@@ -1,6 +1,6 @@
 // 300. Longest Increasing Subsequence [Medium]
 // https://leetcode.com/problems/longest-increasing-subsequence/
-// Language: C++ | Runtime: 0 ms | Memory: 14 MB
+// Language: C++ | Runtime: 3 ms | Memory: 14.1 MB
 
 class Solution {
 public:
