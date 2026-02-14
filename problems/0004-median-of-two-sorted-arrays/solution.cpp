@@ -1,6 +1,6 @@
 // 4. Median of Two Sorted Arrays [Hard]
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
-// Language: C++ | Runtime: 0 ms | Memory: 95 MB
+// Language: C++ | Runtime: 0 ms | Memory: 95.1 MB
 
 class Solution {
 public:
