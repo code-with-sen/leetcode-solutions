@@ -1,16 +1,17 @@
 // 217. Contains Duplicate [Easy]
 // https://leetcode.com/problems/contains-duplicate/
-// Language: C++ | Runtime: 47 ms | Memory: 90.9 MB
+// Language: C++ | Runtime: 43 ms | Memory: 90.7 MB
 
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        unordered_set<int> seen; // set contains only unique elements
+        unordered_set<int> seen;
+
         for(int num : nums){
-            if(seen.contains(num)) return true; // agr hai to true
-            seen.insert(num);  // nhi hai to store kro box mei 
+            if(seen.contains(num))  return true;
+            seen.insert(num);
         }
 
-        return false;  // sara unique hai to false bolo 
+        return false;
     }
 };
