@@ -1,16 +1,16 @@
 // 268. Missing Number [Easy]
 // https://leetcode.com/problems/missing-number/
-// Language: C++ | Runtime: 0 ms | Memory: 21.7 MB
+// Language: C++ | Runtime: 0 ms | Memory: 21.8 MB
 
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
-        int n = nums.size();
-        int xor1 = 0 , xor2 = 0 ;
-        for(int i = 0 ; i < n ; i++){
+        int xor1 = 0 , xor2 = 0;
+        for(int i = 0 ; i < nums.size(); i++){
             xor1 ^= nums[i];
-            xor2 ^= (i+1);
+            xor2 ^= (i + 1);
         }
+
         return xor1^xor2;
     }
 };
