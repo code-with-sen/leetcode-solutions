@@ -1,0 +1,21 @@
+// 1680. Concatenation of Consecutive Binary Numbers [Medium]
+// https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/
+// Language: C++ | Runtime: 48 ms | Memory: 8.3 MB
+
+class Solution {
+ public:
+  int concatenatedBinary(int n) {
+    constexpr int kMod = 1'000'000'007;
+    long ans = 0;
+
+    for (int i = 1; i <= n; ++i)
+      ans = ((ans << numberOfBits(i)) % kMod + i) % kMod;
+
+    return ans;
+  }
+
+ private:
+  int numberOfBits(int n) {
+    return log2(n) + 1;
+  }
+};
