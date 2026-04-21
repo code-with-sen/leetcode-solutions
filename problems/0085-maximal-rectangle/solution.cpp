@@ -1,6 +1,6 @@
 // 85. Maximal Rectangle [Hard]
 // https://leetcode.com/problems/maximal-rectangle/
-// Language: C++ | Runtime: 3 ms | Memory: 19.4 MB
+// Language: C++ | Runtime: 7 ms | Memory: 19.1 MB
 
 class Solution {
 public:
@@ -29,71 +29,26 @@ public:
         return maxArea;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 // binary area starts from here 
 
     int maximalRectangle(vector<vector<char>>& matrix) {
-        if (matrix.empty()) return 0;
+       if(matrix.empty()) return 0;
+       int n = matrix[0].size();
+       vector<int> height(n,0);
+       int maxArea = 0;
 
-        int n = matrix[0].size();
-        vector<int> heights(n, 0);
-        int maxArea = 0;
+       for(auto& row : matrix){
+        for(int i = 0 ; i < n; i++){
+            if(row[i] == '1')
+                height[i] += 1;
+            else
+                height[i] = 0;
+            
 
-        for (auto& row : matrix) {
-            for (int i = 0; i < n; i++) {
-                if (row[i] == '1')
-                    heights[i] += 1;
-                else
-                    heights[i] = 0;
-            }
-
-            maxArea = max(maxArea, largestRectangleArea(heights));
         }
-
-        return maxArea;
+            maxArea = max(maxArea, largestRectangleArea(height));
+       }
+      
+      return maxArea;
     }
 };
