@@ -1,6 +1,6 @@
 // 85. Maximal Rectangle [Hard]
 // https://leetcode.com/problems/maximal-rectangle/
-// Language: C++ | Runtime: 7 ms | Memory: 19.1 MB
+// Language: C++ | Runtime: 3 ms | Memory: 19.1 MB
 
 class Solution {
 public:
