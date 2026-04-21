@@ -1,6 +1,6 @@
 // 739. Daily Temperatures [Medium]
 // https://leetcode.com/problems/daily-temperatures/
-// Language: C++ | Runtime: 19 ms | Memory: 107.3 MB
+// Language: C++ | Runtime: 15 ms | Memory: 107.2 MB
 
 class Solution {
 public:
