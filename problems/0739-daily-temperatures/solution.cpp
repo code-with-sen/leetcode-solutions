@@ -1,24 +1,24 @@
 // 739. Daily Temperatures [Medium]
 // https://leetcode.com/problems/daily-temperatures/
-// Language: C++ | Runtime: 16 ms | Memory: 107.3 MB
+// Language: C++ | Runtime: 19 ms | Memory: 107.3 MB
 
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temps) {
-        int n = temps.size();  // no of days in temps
-        vector<int> ans(n , 0); // n size ka hai 0 value h sbka
-        stack<int> st;    // stack bana liya 
+        
+        int n = temps.size();
+        vector<int> ans(n,0);
+        stack<int> st;
 
-        for(int i = 0 ; i < n ; i++){  // 0 index se last index tk 
+        for(int i = 0 ; i < n ; i++){
             while(!st.empty() && temps[i] > temps[st.top()]){
-                int lastDay = st.top(); // index hai mera 
+                int prev = st.top();
                 st.pop();
-                ans[lastDay] = i - lastDay; // ans ka index mei =>
+                ans[prev] = i - prev;
             }
-
             st.push(i); // pushing the index
         }
 
-        return ans;  // pura ans vector 
+        return ans;
     }
 };
