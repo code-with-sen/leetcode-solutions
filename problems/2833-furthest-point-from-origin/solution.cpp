@@ -1,6 +1,6 @@
 // 2833. Furthest Point From Origin [Easy]
 // https://leetcode.com/problems/furthest-point-from-origin/
-// Language: C++ | Runtime: 1 ms | Memory: 9.1 MB
+// Language: C++ | Runtime: 0 ms | Memory: 9.1 MB
 
 class Solution {
 public:
