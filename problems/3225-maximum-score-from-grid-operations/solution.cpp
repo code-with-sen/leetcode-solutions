@@ -1,6 +1,6 @@
 // 3225. Maximum Score From Grid Operations [Hard]
 // https://leetcode.com/problems/maximum-score-from-grid-operations/
-// Language: C++ | Runtime: 59 ms | Memory: 35.2 MB
+// Language: C++ | Runtime: 67 ms | Memory: 35.3 MB
 
 using ll=long long;
 static ll colSum[100][101]={{0}}; // 1-indexed prefix col sums
