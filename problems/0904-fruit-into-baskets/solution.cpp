@@ -1,6 +1,6 @@
 // 904. Fruit Into Baskets [Medium]
 // https://leetcode.com/problems/fruit-into-baskets/
-// Language: C++ | Runtime: 39 ms | Memory: 75.1 MB
+// Language: C++ | Runtime: 43 ms | Memory: 85 MB
 
 class Solution {
 public:
@@ -8,7 +8,7 @@ public:
         unordered_map<int, int> basket;
         int left = 0, maxFruits = 0;
 
-        for (int right = 0; right < fruits.size(); ++right) {
+        for (int right = 0; right < fruits.size(); right++) {
             basket[fruits[right]]++;
 
             while (basket.size() > 2) {
