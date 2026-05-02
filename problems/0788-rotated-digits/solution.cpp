@@ -1,6 +1,6 @@
 // 788. Rotated Digits [Medium]
 // https://leetcode.com/problems/rotated-digits/
-// Language: C++ | Runtime: 2 ms | Memory: 9.7 MB
+// Language: C++ | Runtime: 0 ms | Memory: 9.6 MB
 
 class Solution {
 public:
