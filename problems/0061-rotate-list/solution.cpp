@@ -1,6 +1,6 @@
 // 61. Rotate List [Medium]
 // https://leetcode.com/problems/rotate-list/
-// Language: C++ | Runtime: 0 ms | Memory: 16.5 MB
+// Language: C++ | Runtime: 0 ms | Memory: 16.3 MB
 
 
 class Solution {
