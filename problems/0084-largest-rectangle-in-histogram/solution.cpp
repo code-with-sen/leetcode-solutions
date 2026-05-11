@@ -1,6 +1,6 @@
 // 84. Largest Rectangle in Histogram [Hard]
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
-// Language: C++ | Runtime: 17 ms | Memory: 81.5 MB
+// Language: C++ | Runtime: 11 ms | Memory: 81.3 MB
 
 class Solution {
 public:
