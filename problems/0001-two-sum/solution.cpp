@@ -1,21 +1,21 @@
 // 1. Two Sum [Easy]
 // https://leetcode.com/problems/two-sum/
-// Language: C++ | Runtime: 3 ms | Memory: 14.8 MB
+// Language: C++ | Runtime: 0 ms | Memory: 14.9 MB
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int>container;
+        unordered_map<int, int> mp;
+        for(int i = 0 ; i < nums.size() ; i++){
+            int need =  target - nums[i];
 
-        for(int i = 0 ; i < nums.size(); i++){
-            int need = target - nums[i];
-
-            if(container.find(need) != container.end()){
-                return{container[need], i};
+            if(mp.find(need) != mp.end()){
+                return{mp[need], i};
             }
 
-            container[nums[i]] = i;
+            mp[nums[i]] = i;
         }
+
         return {};
     }
 };
