@@ -1,6 +1,6 @@
 // 84. Largest Rectangle in Histogram [Hard]
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
-// Language: C++ | Runtime: 11 ms | Memory: 81.3 MB
+// Language: C++ | Runtime: 32 ms | Memory: 81.4 MB
 
 class Solution {
 public:
@@ -10,19 +10,18 @@ public:
         int maxArea = 0 ;
 
         for(int i = 0 ; i <= n ; i++){
-            int curr = (i == n) ? 0 : heights[i];
-
+            int curr = (i == n ) ? 0 : heights[i];
             while(!st.empty() && curr < heights[st.top()]){
                 int height = heights[st.top()];
                 st.pop();
 
-                int width = st.empty() ? i : i - st.top() - 1;
+                int width = st.empty () ? i : i - st.top() - 1;
                 maxArea = max(maxArea , height * width);
             }
-            
+
             st.push(i);
         }
 
-        return maxArea ;
+        return maxArea;
     }
 };
