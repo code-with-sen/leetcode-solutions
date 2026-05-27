@@ -1,6 +1,6 @@
 // 3121. Count the Number of Special Characters II [Medium]
 // https://leetcode.com/problems/count-the-number-of-special-characters-ii/
-// Language: C++ | Runtime: 51 ms | Memory: 24.7 MB
+// Language: C++ | Runtime: 63 ms | Memory: 24.8 MB
 
 #include <string>
 #include <vector>
