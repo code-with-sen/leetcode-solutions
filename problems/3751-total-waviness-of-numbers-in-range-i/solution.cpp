@@ -1,6 +1,6 @@
 // 3751. Total Waviness of Numbers in Range I [Medium]
 // https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/
-// Language: C++ | Runtime: 51 ms | Memory: 10.2 MB
+// Language: C++ | Runtime: 52 ms | Memory: 10 MB
 
 class Solution {
 public:
@@ -26,6 +26,6 @@ public:
             ans += waviness(x);
         }
 
-        return ans;
+        return ans ;
     }
 };
