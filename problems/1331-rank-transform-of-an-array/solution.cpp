@@ -1,6 +1,6 @@
 // 1331. Rank Transform of an Array [Easy]
 // https://leetcode.com/problems/rank-transform-of-an-array/
-// Language: C++ | Runtime: 19 ms | Memory: 36.5 MB
+// Language: C++ | Runtime: 20 ms | Memory: 36.5 MB
 
 class Solution {
 public:
