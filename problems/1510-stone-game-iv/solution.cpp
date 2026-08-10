@@ -1,6 +1,6 @@
 // 1510. Stone Game IV [Hard]
 // https://leetcode.com/problems/stone-game-iv/
-// Language: C++ | Runtime: 31 ms | Memory: 8.8 MB
+// Language: C++ | Runtime: 31 ms | Memory: 9 MB
 
 class Solution {
 public:
@@ -14,6 +14,6 @@ public:
                 }
             }
         }
-        return dp[n];
+        return  dp[n];
     }
 };
