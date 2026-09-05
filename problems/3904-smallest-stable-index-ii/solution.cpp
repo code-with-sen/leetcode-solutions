@@ -1,30 +1,22 @@
 // 3904. Smallest Stable Index II [Medium]
 // https://leetcode.com/problems/smallest-stable-index-ii/
-// Language: C++ | Runtime: 1 ms | Memory: 202.5 MB
+// Language: C++ | Runtime: 3 ms | Memory: 193.5 MB
 
 class Solution {
 public:
     int firstStableIndex(vector<int>& nums, int k) {
-        int n = nums.size();
+        int maxSoFar = -1;
+        int cand = 0, cMax = 0;
 
-        vector<int> suffixMin(n);
+        for (int i = 0; i < nums.size(); i++) {
+            maxSoFar = max(maxSoFar, nums[i]);
 
-        // build suffix min
-        suffixMin[n - 1] = nums[n - 1];
-        for (int i = n - 2; i >= 0; i--) {
-            suffixMin[i] = min(suffixMin[i + 1], nums[i]);
+            if (i == cand) cMax = maxSoFar;
+
+            if (nums[i] < cMax - k)
+                cand = i + 1;
         }
 
-        int prefixMax = nums[0];
-
-        for (int i = 0; i < n; i++) {
-            prefixMax = max(prefixMax, nums[i]);
-
-            if (prefixMax - suffixMin[i] <= k) {
-                return i;
-            }
-        }
-
-        return -1;
+        return cand < nums.size() ? cand : -1;
     }
 };
