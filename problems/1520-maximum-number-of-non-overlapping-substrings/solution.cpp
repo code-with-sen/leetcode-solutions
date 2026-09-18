@@ -1,6 +1,6 @@
 // 1520. Maximum Number of Non-Overlapping Substrings [Hard]
 // https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/
-// Language: C++ | Runtime: 6 ms | Memory: 24.1 MB
+// Language: C++ | Runtime: 3 ms | Memory: 24.1 MB
 
 class Solution {
 public:
