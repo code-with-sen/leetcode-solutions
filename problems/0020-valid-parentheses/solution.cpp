@@ -1,31 +1,21 @@
 // 20. Valid Parentheses [Easy]
 // https://leetcode.com/problems/valid-parentheses/
-// Language: C++ | Runtime: 2 ms | Memory: 8.9 MB
+// Language: C++ | Runtime: 0 ms | Memory: 8.3 MB
 
 class Solution {
 public:
-    bool isValid(string s) {
-        stack<char> st;
-        for(char c : s){
-            if(c == '(' || c == '{' || c == '[')
-                st.push(c);
+    bool isValid(string& str) {
+        if (str.size() % 2)
+            return 0;
 
-                else{
-                   if (st.empty()) return false;
-                
+        int j = 0;
 
-                char top = st.top();
-                st.pop();
+        for (char s : str)
+            if ((s & 3) != 1)
+                str[j++] = s;
+            else if (j == 0 || ((s - str[--j] + 1) >> 1) != 1)
+                return 0;
 
-                if((c == ')' && top != '(') ||
-                   (c == '}' && top != '{') ||
-                  (c == ']' && top != '['))
-                    return false;
-                }
-
-                
-        }
-         return st.empty();
-        
+        return j == 0;
     }
 };
