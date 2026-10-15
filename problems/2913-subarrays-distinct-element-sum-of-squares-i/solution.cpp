@@ -1,6 +1,6 @@
 // 2913. Subarrays Distinct Element Sum of Squares I [Easy]
 // https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/
-// Language: C++ | Runtime: 40 ms | Memory: 36.1 MB
+// Language: C++ | Runtime: 40 ms | Memory: 36.3 MB
 
 class Solution {
 public:
