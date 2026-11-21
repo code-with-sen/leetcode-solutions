@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **604** | 163 | 320 | 121 | 504 | C++, Java |
+| **610** | 166 | 322 | 122 | 505 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -617,3 +617,4 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | 🟡 Medium | [C++](./problems/3942-minimum-operations-to-sort-a-permutation/) |
 | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | 🟢 Easy | [C++](./problems/3963-create-grid-with-exactly-one-path/) |
 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | 🟡 Medium | [C++](./problems/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) |
+| 4111 | [Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/) | 🟢 Easy | [C++](./problems/4111-count-consistent-subarrays-i/) |
