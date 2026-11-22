@@ -1,6 +1,6 @@
 // 4121. Minimum Cost to Make All Array Elements Equal [Medium]
 // https://leetcode.com/problems/minimum-cost-to-make-all-array-elements-equal/
-// Language: C++ | Runtime: 7 ms | Memory: 208.2 MB
+// Language: C++ | Runtime: 3 ms | Memory: 208.2 MB
 
 
 class Solution {
