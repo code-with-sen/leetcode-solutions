@@ -1,6 +1,6 @@
 // 4122. Earliest Signal Activation Times [Medium]
 // https://leetcode.com/problems/earliest-signal-activation-times/
-// Language: C++ | Runtime: 601 ms | Memory: 446.9 MB
+// Language: C++ | Runtime: 658 ms | Memory: 446.9 MB
 
 
 class Solution {
