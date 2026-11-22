@@ -622,3 +622,4 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 4120 | [Count Dominant Elements](https://leetcode.com/problems/count-dominant-elements/) | 🟢 Easy | [C++](./problems/4120-count-dominant-elements/) |
 | 4121 | [Minimum Cost to Make All Array Elements Equal](https://leetcode.com/problems/minimum-cost-to-make-all-array-elements-equal/) | 🟡 Medium | [C++](./problems/4121-minimum-cost-to-make-all-array-elements-equal/) |
 | 4122 | [Earliest Signal Activation Times](https://leetcode.com/problems/earliest-signal-activation-times/) | 🟡 Medium | [C++](./problems/4122-earliest-signal-activation-times/) |
+| 4123 | [Minimum Cost to Delete Array](https://leetcode.com/problems/minimum-cost-to-delete-array/) | 🔴 Hard | [C++](./problems/4123-minimum-cost-to-delete-array/) |
