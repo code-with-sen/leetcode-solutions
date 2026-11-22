@@ -1,6 +1,6 @@
 // 4120. Count Dominant Elements [Easy]
 // https://leetcode.com/problems/count-dominant-elements/
-// Language: C++ | Runtime: 1 ms | Memory: 30.7 MB
+// Language: C++ | Runtime: 2 ms | Memory: 30.8 MB
 
 class Solution {
 public:
