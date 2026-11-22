@@ -338,6 +338,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 Medium | [C++](./problems/2095-delete-the-middle-node-of-a-linked-list/) |
 | 2106 | [Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/) | 🔴 Hard | [C++](./problems/2106-maximum-fruits-harvested-after-at-most-k-steps/) |
 | 2110 | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) | 🟡 Medium | [C++](./problems/2110-number-of-smooth-descent-periods-of-a-stock/) |
+| 2124 | [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) | 🟢 Easy | [C++](./problems/2124-check-if-all-as-appears-before-all-bs/) |
 | 2125 | [Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/) | 🟡 Medium | [C++](./problems/2125-number-of-laser-beams-in-a-bank/) |
 | 2126 | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) | 🟡 Medium | [C++](./problems/2126-destroying-asteroids/) |
 | 2130 | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | 🟡 Medium | [C++](./problems/2130-maximum-twin-sum-of-a-linked-list/) |
