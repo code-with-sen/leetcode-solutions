@@ -620,3 +620,4 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | 🟡 Medium | [C++](./problems/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) |
 | 4111 | [Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/) | 🟢 Easy | [C++](./problems/4111-count-consistent-subarrays-i/) |
 | 4120 | [Count Dominant Elements](https://leetcode.com/problems/count-dominant-elements/) | 🟢 Easy | [C++](./problems/4120-count-dominant-elements/) |
+| 4121 | [Minimum Cost to Make All Array Elements Equal](https://leetcode.com/problems/minimum-cost-to-make-all-array-elements-equal/) | 🟡 Medium | [C++](./problems/4121-minimum-cost-to-make-all-array-elements-equal/) |
