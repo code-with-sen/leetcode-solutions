@@ -619,3 +619,4 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | 🟢 Easy | [C++](./problems/3963-create-grid-with-exactly-one-path/) |
 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | 🟡 Medium | [C++](./problems/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) |
 | 4111 | [Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/) | 🟢 Easy | [C++](./problems/4111-count-consistent-subarrays-i/) |
+| 4120 | [Count Dominant Elements](https://leetcode.com/problems/count-dominant-elements/) | 🟢 Easy | [C++](./problems/4120-count-dominant-elements/) |
