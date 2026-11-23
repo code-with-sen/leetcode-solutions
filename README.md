@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **611** | 166 | 323 | 122 | 505 | C++, Java |
+| **611** | 166 | 323 | 122 | 506 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -229,6 +229,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 1344 | [Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/) | 🟡 Medium | [C++](./problems/1344-angle-between-hands-of-a-clock/) |
 | 1345 | [Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | 🔴 Hard | [C++](./problems/1345-jump-game-iv/) |
 | 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 Easy | [C++](./problems/1351-count-negative-numbers-in-a-sorted-matrix/) |
+| 1352 | [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | 🟡 Medium | [C++](./problems/1352-product-of-the-last-k-numbers/) |
 | 1356 | [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | 🟢 Easy | [C++](./problems/1356-sort-integers-by-the-number-of-1-bits/) |
 | 1358 | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | 🟡 Medium | [C++](./problems/1358-number-of-substrings-containing-all-three-characters/) |
 | 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | 🟡 Medium | [C++](./problems/1382-balance-a-binary-search-tree/) |
