@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **611** | 166 | 323 | 122 | 506 | C++, Java |
+| **612** | 167 | 323 | 122 | 507 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -488,6 +488,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3379 | [Transformed Array](https://leetcode.com/problems/transformed-array/) | 🟢 Easy | [C++](./problems/3379-transformed-array/) |
 | 3397 | [Maximum Number of Distinct Elements After Operations](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | 🟡 Medium | [C++](./problems/3397-maximum-number-of-distinct-elements-after-operations/) |
 | 3408 | [Design Task Manager](https://leetcode.com/problems/design-task-manager/) | 🟡 Medium | [C++](./problems/3408-design-task-manager/) |
+| 3411 | [Maximum Subarray With Equal Products](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | 🟢 Easy | [C++](./problems/3411-maximum-subarray-with-equal-products/) |
 | 3414 | [Maximum Score of Non-overlapping Intervals](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | 🔴 Hard | [C++](./problems/3414-maximum-score-of-non-overlapping-intervals/) |
 | 3418 | [Maximum Amount of Money Robot Can Earn](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | 🟡 Medium | [C++](./problems/3418-maximum-amount-of-money-robot-can-earn/) |
 | 3420 | [Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | 🔴 Hard | [C++](./problems/3420-count-non-decreasing-subarrays-after-k-operations/) |
