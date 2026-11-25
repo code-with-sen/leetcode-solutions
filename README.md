@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **612** | 167 | 323 | 122 | 507 | C++, Java |
+| **613** | 167 | 323 | 123 | 508 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -617,6 +617,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3904 | [Smallest Stable Index II](https://leetcode.com/problems/smallest-stable-index-ii/) | 🟡 Medium | [C++](./problems/3904-smallest-stable-index-ii/) |
 | 3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/) | 🟡 Medium | [C++](./problems/3905-multi-source-flood-fill/) |
 | 3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | 🔴 Hard | [C++](./problems/3906-count-good-integers-on-a-grid-path/) |
+| 3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | 🔴 Hard | [C++](./problems/3934-smallest-unique-subarray/) |
 | 3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | 🟡 Medium | [C++](./problems/3942-minimum-operations-to-sort-a-permutation/) |
 | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | 🟢 Easy | [C++](./problems/3963-create-grid-with-exactly-one-path/) |
 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | 🟡 Medium | [C++](./problems/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) |
