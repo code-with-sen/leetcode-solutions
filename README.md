@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **613** | 167 | 323 | 123 | 508 | C++, Java |
+| **614** | 168 | 323 | 123 | 509 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -482,6 +482,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3349 | [Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | 🟢 Easy | [C++](./problems/3349-adjacent-increasing-subarrays-detection-i/) |
 | 3350 | [Adjacent Increasing Subarrays Detection II](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/) | 🟡 Medium | [C++](./problems/3350-adjacent-increasing-subarrays-detection-ii/) |
 | 3354 | [Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | 🟢 Easy | [C++](./problems/3354-make-array-elements-equal-to-zero/) |
+| 3360 | [Stone Removal Game](https://leetcode.com/problems/stone-removal-game/) | 🟢 Easy | [C++](./problems/3360-stone-removal-game/) |
 | 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | 🔴 Hard | [C++](./problems/3363-find-the-maximum-number-of-fruits-collected/) |
 | 3364 | [Minimum Positive Sum Subarray ](https://leetcode.com/problems/minimum-positive-sum-subarray/) | 🟢 Easy | [C++](./problems/3364-minimum-positive-sum-subarray/) |
 | 3370 | [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | 🟢 Easy | [C++](./problems/3370-smallest-number-with-all-set-bits/) |
