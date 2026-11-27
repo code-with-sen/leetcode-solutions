@@ -5,7 +5,7 @@ Each commit is dated to the moment that solution was accepted.
 
 | Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard | Days with an accepted solution | Languages |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| **614** | 168 | 323 | 123 | 509 | C++, Java |
+| **615** | 168 | 324 | 123 | 510 | C++, Java |
 
 Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with the problem link, difficulty, runtime and memory of that submission.
 
@@ -620,6 +620,7 @@ Layout: `problems/<number>-<slug>/solution.<cpp|java>`. Every file starts with t
 | 3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | 🔴 Hard | [C++](./problems/3906-count-good-integers-on-a-grid-path/) |
 | 3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | 🔴 Hard | [C++](./problems/3934-smallest-unique-subarray/) |
 | 3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | 🟡 Medium | [C++](./problems/3942-minimum-operations-to-sort-a-permutation/) |
+| 3946 | [Maximum Number of Items From Sale I](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/) | 🟡 Medium | [C++](./problems/3946-maximum-number-of-items-from-sale-i/) |
 | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | 🟢 Easy | [C++](./problems/3963-create-grid-with-exactly-one-path/) |
 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | 🟡 Medium | [C++](./problems/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) |
 | 4111 | [Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/) | 🟢 Easy | [C++](./problems/4111-count-consistent-subarrays-i/) |
